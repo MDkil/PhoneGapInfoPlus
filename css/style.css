@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('http://wedesignthemes.com/themes/role/wp-content/themes/role/css/../font/gotham-medium-webfont.eot');
+    src: url('http://wedesignthemes.com/themes/role/wp-content/themes/role/css/../font/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://wedesignthemes.com/themes/role/wp-content/themes/role/css/../font/gotham-medium-webfont.woff') format('woff'),
+         url('http://wedesignthemes.com/themes/role/wp-content/themes/role/css/../font/gotham-medium-webfont.ttf') format('truetype'),
+         url('http://wedesignthemes.com/themes/role/wp-content/themes/role/css/../font/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	font-family: gotham_mediumregular;
+}
+
+.spalshScreen
+{
+	position: absolute;
+		top: 0;
+		left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: #00baef;
+	background-image: url('../medias/images/logo.png');
+	background-repeat: no-repeat;
+	background-size: 95% auto;
+	background-position: center;
+	top: 0;
+		left: 0;
+
+	display: none;
+}
+
+.page
+{
+	position: absolute;
+		top: 0;
+		left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.mainScreen
+{
+	position: absolute;
+		top: 0;
+		left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-image: url('../medias/images/bg.gif');
+
+	-webkit-transition: 0.3s left;
+}
+
+.barre
+{	
+	position: relative;
+	z-index: 1;
+
+	width: 100%;
+	height: 60px;
+
+	background-color: #00baef;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 2px 2px 2px 0px;
+	border-bottom: 1px solid white;
+}
+	.barre .logoMenu
+	{
+		width: 59px;
+		height: 60px;
+		background-image: url('../medias/images/menu.png');
+		background-position: center;
+		background-size: 80% auto;
+		background-repeat: no-repeat;
+		
+
+
+		float: left;
+	}
+		.barre .logoMenu:active
+		{
+			opacity: 0.5;
+		}
+	.barre .logoInfoplus
+	{
+		width: 200px;
+		height: 60px;
+		background-image: url('../medias/images/logo.png');
+		background-position: center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+
+		float: left;
+	}
+	.barre .logoCall
+	{
+		width: 59px;
+		height: 60px;
+		background-image: url('../medias/images/marwa.png');
+		background-position: center;
+		background-size: 80% auto;
+		background-repeat: no-repeat;
+		
+
+		float: left;
+	}
+		.barre .logoCall:active
+		{
+			opacity: 0.5;
+		}
+
+
+/* News */
+.news
+{
+	position: absolute;
+		left: 0;
+		top: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+	.news .new
+	{
+		width: 300px;
+		height: 290px;
+		margin: 10px;
+
+		box-shadow: rgba(0, 0, 0, 0.0980392) 2px 2px 2px 0px;
+		background-image: url("../medias/images/noise-2.png");
+	}
+	.news .new:first-child
+	{
+		margin-top: 70px;
+	}
+
+	.news .new img
+	{
+		width: 300px;
+		height: 250px;
+	}
+
+	.news .new .titre
+	{
+		width: 290px;
+		padding-left: 5px;
+		padding-right: 5px;
+		line-height: 40px;
+		overflow: hidden;
+		display: block;
+
+		background-color: #00baef;
+		color: white;
+
+		text-align: center;
+		text-transform: uppercase;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+#planningPage .titre
+{
+	background-color: #90cf00;
+}
+
+
+#membresPage .titre
+{
+	background-color: #d90052;
+}
+
+.map
+{
+	position: absolute;
+		left: 0;
+		top: 0;
+
+	z-index: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+#mapPage .status
+{
+	position: absolute;
+		bottom: 0;
+		left: 0;
+
+	width: 310px;
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 40px;
+	overflow: hidden;
+	display: block;
+
+	background-color: #00baef;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 2px 2px 2px 0px;
+	border-top: 1px solid white;
+	color: white;
+
+
+
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

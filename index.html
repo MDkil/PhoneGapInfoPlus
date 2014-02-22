@@ -1,0 +1,133 @@
+<html>
+<head>
+	<title>Infoplus PhoneGap Application</title>
+
+	<!-- metadatas -->
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="spalshScreen">
+	</div>
+
+
+	<div class="mainScreen" id="screen">
+
+		<div class="page" id="newsPage" style="display: none;">
+			<div class="barre">
+				<div class="logoMenu" ontouchend="openMenu();"></div>
+				<div class="logoInfoplus"></div>
+				<div class="logoCall" ontouchend="window.location='tel:0021621786162'"></div>
+			</div>
+
+			<div class="news">
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre">TITRE DE NOTRE ACTUALITE</span>
+				</div>
+
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre">TITRE DE NOTRE ACTUALITE</span>
+				</div>
+
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre">TITRE DE NOTRE ACTUALITE</span>
+				</div>
+
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre">TITRE DE NOTRE ACTUALITE</span>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="page" id="planningPage" style="display:none">
+			<div class="barre">
+				<div class="logoMenu" ontouchend="openMenu();"></div>
+				<div class="logoInfoplus"></div>
+				<div class="logoCall" ontouchend="window.location='tel:0021621786162'"></div>
+			</div>
+
+			<div class="news">
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre vert">MEMBRE</span>
+				</div>
+
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre vert">TITRE DE NOTRE PLAN</span>
+				</div>
+
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre vert">TITRE DE NOTRE PLAN</span>
+				</div>
+
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre vert">TITRE DE NOTRE PLAN</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="page" id="membresPage" style="display: none;">
+			<div class="barre">
+				<div class="logoMenu" ontouchend="openMenu();"></div>
+				<div class="logoInfoplus"></div>
+				<div class="logoCall" ontouchend="window.location='tel:0021621786162'"></div>
+			</div>
+
+			<div class="news">
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre vert">TITRE DE NOTRE PLAN</span>
+				</div>
+
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre vert">TITRE DE NOTRE PLAN</span>
+				</div>
+
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre vert">TITRE DE NOTRE PLAN</span>
+				</div>
+
+				<div class="new">
+					<img src="medias/images/css.jpg">
+					<span class="titre vert">TITRE DE NOTRE PLAN</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="page" id="mapPage" >
+
+			<div class="barre">
+				<div class="logoMenu" ontouchend="openMenu();"></div>
+				<div class="logoInfoplus"></div>
+				<div class="logoCall" ontouchend="window.location='tel:0021621786162'"></div>
+			</div>
+
+			<div id="map" class="map">
+			</div>
+
+			<div class="status">Local Ouvert</div>
+		</div>
+
+	</div>
+
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk3MTMxLOcSdzgsB2xGSb1drqkNAwi1qU&sensor=true">
+</script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
