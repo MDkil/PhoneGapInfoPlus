@@ -1,0 +1,4 @@
+PhoneGapInfoPlus
+================
+
+InfoPlus phonegap application
