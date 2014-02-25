@@ -10,9 +10,24 @@
 </head>
 <body>
 
-	<div class="spalshScreen">
+	<div class="spalshScreen" style="display:none">
 	</div>
 
+	<div class="menu">
+
+		<div class="logoInfoplus"></div>
+
+		<div class="elements">
+			<span style="background-image: url(medias/images/menu.png)">Actualités</span>
+			<span style="background-image: url(medias/images/menu.png)">Planning</span>
+			<span style="background-image: url(medias/images/menu.png)">Le Club</span>
+			<span style="background-image: url(medias/images/menu.png)">Membres</span>
+			<span style="background-image: url(medias/images/menu.png)">Local</span>
+			<span style="background-image: url(medias/images/menu.png)">Site</span>
+			<span style="background-image: url(medias/images/menu.png)">Github</span>
+			<span style="background-image: url(medias/images/menu.png)">Contact</span>
+		</div>
+	</div>
 
 	<div class="mainScreen" id="screen">
 
@@ -109,7 +124,7 @@
 			</div>
 		</div>
 
-		<div class="page" id="mapPage" >
+		<div class="page" id="mapPage" style="display:none">
 
 			<div class="barre">
 				<div class="logoMenu" ontouchend="openMenu();"></div>
@@ -122,6 +137,31 @@
 
 			<div class="status">Local Ouvert</div>
 		</div>
+
+
+		<div class="page" id="articlePage" style="display:block;">
+			
+			<div class="barre">
+				<div class="logoMenu" ontouchend="openMenu();"></div>
+				<div class="logoInfoplus"></div>
+				<div class="logoCall" ontouchend="window.location='tel:0021621786162'"></div>
+			</div>
+			
+			<div class="news">	
+				<img src="medias/images/css.jpg">
+
+				<span class="titre">Titre de l'actualité</span>
+				<span class="article">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet mi et velit lacinia, non dictum nibh tempor. Maecenas ac sem vitae mi mattis ullamcorper. Duis pha Duis pha Duis pha Duis pha Duis pha
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet mi et velit lacinia, non dictum nibh tempor. Maecenas ac sem vitae mi mattis ullamcorper. Duis pha Duis pha Duis pha Duis pha Duis pha
+				</span>
+			</div>
+
+		</div>
+
+
+
 
 	</div>
 

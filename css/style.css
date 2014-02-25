@@ -12,11 +12,12 @@
 body
 {
 	font-family: gotham_mediumregular;
+	overflow: none;
 }
 
 .spalshScreen
 {
-	position: absolute;
+	position: fixed;
 		top: 0;
 		left: 0;
 
@@ -28,11 +29,79 @@ body
 	background-repeat: no-repeat;
 	background-size: 95% auto;
 	background-position: center;
-	top: 0;
+
+	display: block;
+}
+
+.menu
+{
+	position: fixed;
+		top: 0;
 		left: 0;
 
-	display: none;
+	width: 260px;
+	height: 100%;
+
+	background-color: #00baef;
+
+	display: block;
 }
+	.menu .logoInfoplus
+	{
+		position: relative;
+			z-index: 1;
+		width: 100%;
+		height: 60px;
+
+		background-color: #00baef;
+		background-image: url('../medias/images/logo.png');
+		background-repeat: no-repeat;
+		background-size: 95% auto;
+		background-position: top center;
+	}
+	.menu .elements
+	{
+		position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+		width: 260px;
+		height: 100%;
+
+		overflow: auto;
+	}
+	.menu span
+	{
+		width: 205px;
+		line-height: 50px;
+		
+		text-align: left;
+		padding-left: 55px;
+		color: white;
+
+		text-transform: uppercase;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+
+		border-bottom: 2px solid white;
+
+		display: block;
+
+
+		background-image: url('../medias/images/menu.png');
+		background-repeat: no-repeat;
+		background-size: 30px ;
+		background-position: 5px center;
+	}
+		.menu span:active
+		{
+			opacity: 0.5;
+		}
+		.menu span:first-child
+		{
+			border-top: 2px solid white;
+			margin-top: 64px;
+		}
 
 .page
 {
@@ -54,6 +123,7 @@ body
 	height: 100%;
 
 	background-image: url('../medias/images/bg.gif');
+	box-shadow: rgba(0, 0, 0, 0.0980392) -4px 4px 4px 0px;
 
 	-webkit-transition: 0.3s left;
 }
@@ -79,7 +149,6 @@ body
 		background-size: 80% auto;
 		background-repeat: no-repeat;
 		
-
 
 		float: left;
 	}
@@ -215,4 +284,38 @@ body
 	text-transform: uppercase;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+
+
+#articlePage img
+{
+	width: 320px;
+	height: 270px;
+	margin-top: 60px;
+}
+
+
+#articlePage .news .titre
+{
+	width: 290px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block;
+	color: #00baef;
+	text-align: left;
+}
+
+#articlePage .article
+{
+	width: 290px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	display: block;
+	color: rgb(117, 117, 117);;
+	text-align: left;
 }
